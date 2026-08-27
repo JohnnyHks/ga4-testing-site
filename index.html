@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GA4 Testing Store</title>
+  <meta name="description" content="Sandbox website for testing Google Analytics 4 and Google Tag Manager." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="analytics.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">GA4 Testing Store</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="checkout.html">Checkout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Analytics sandbox</p>
+        <h1>Test GA4 events on a real public website.</h1>
+        <p>This fake store is deliberately simple so you can inspect page views, ecommerce events, lead events and navigation in GA4 and GTM.</p>
+        <div class="actions">
+          <a class="button" href="products.html" data-track="select_promotion">Browse products</a>
+          <button class="button secondary" id="leadButton" type="button">Generate test lead</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>What you can test</h2>
+      <div class="grid three">
+        <article class="card"><h3>Navigation</h3><p>page_view and outbound/internal click behavior.</p></article>
+        <article class="card"><h3>Ecommerce</h3><p>view_item, add_to_cart, begin_checkout and purchase.</p></article>
+        <article class="card"><h3>Lead generation</h3><p>A simple generate_lead event from the home page.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">GA4 sandbox · No real orders are created.</footer>
+</body>
+</html>
