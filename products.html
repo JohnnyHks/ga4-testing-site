@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products · GA4 Testing Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="analytics.js" defer></script>
+</head>
+<body data-page="products">
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">GA4 Testing Store</a><nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="checkout.html">Checkout</a></nav></div></header>
+  <main class="container section">
+    <p class="eyebrow">Fake catalog</p>
+    <h1>Products</h1>
+    <div class="grid three" id="productGrid">
+      <article class="card product" data-item-id="sku_hoodie" data-item-name="Analytics Hoodie" data-price="59.90">
+        <h2>Analytics Hoodie</h2><p>€59.90</p><button class="button view-item" type="button">View item</button><button class="button secondary add-cart" type="button">Add to cart</button>
+      </article>
+      <article class="card product" data-item-id="sku_mug" data-item-name="Data Mug" data-price="14.90">
+        <h2>Data Mug</h2><p>€14.90</p><button class="button view-item" type="button">View item</button><button class="button secondary add-cart" type="button">Add to cart</button>
+      </article>
+      <article class="card product" data-item-id="sku_cap" data-item-name="GTM Cap" data-price="24.90">
+        <h2>GTM Cap</h2><p>€24.90</p><button class="button view-item" type="button">View item</button><button class="button secondary add-cart" type="button">Add to cart</button>
+      </article>
+    </div>
+    <div class="actions top-gap"><a class="button" href="checkout.html" id="checkoutLink">Go to checkout</a></div>
+  </main>
+</body>
+</html>
