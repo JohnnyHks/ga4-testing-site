@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout · GA4 Testing Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="analytics.js" defer></script>
+</head>
+<body data-page="checkout">
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">GA4 Testing Store</a><nav><a href="index.html">Home</a><a href="products.html">Products</a><a href="checkout.html">Checkout</a></nav></div></header>
+  <main class="container section narrow">
+    <p class="eyebrow">Fake checkout</p>
+    <h1>Checkout</h1>
+    <p>This page fires <code>begin_checkout</code> when loaded with cart items.</p>
+    <div id="cartSummary" class="card"></div>
+    <form id="checkoutForm" class="card form-card">
+      <label>Name<input name="name" required value="Test User" /></label>
+      <label>Email<input name="email" type="email" required value="test@example.com" /></label>
+      <button class="button" type="submit">Complete fake purchase</button>
+    </form>
+    <div id="purchaseMessage" class="success" hidden>Purchase event sent. Check GA4 DebugView/Realtime.</div>
+  </main>
+</body>
+</html>
